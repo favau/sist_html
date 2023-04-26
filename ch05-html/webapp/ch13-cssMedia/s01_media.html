@@ -2,44 +2,44 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=devite-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>media query</title>
 <style type="text/css">
 /*
 뷰포트 : 스마트폰 화면에서 실제 내용이 표시되는 영역
 
-속성        	   설명          사용 가능한 값    기본값
-width          뷰포트의 넓이   device-width   브라우저 기본값
-                            또는 크기
-height         뷰포트의 높이   device-height  브라우저 기본값
-                            또는 크기
-user-scalabe   확대/축소      yes 또는 no     yes
-               가능 여부
-initial-scale  초기 확대/     값1~10          1
-               축소
-minimum-scale  최소 확대/축소  값1~10          0.25
-maximum-scale  최대 확대/축소  값0~10          1.6
+속성			설명			사용 가능한 값		기본값
+width		뷰포트의 넓이	device-width	브라우저 기본 값
+                    	또는 크기
+height		뷰포트의 높이  device-height	브라우저 기본 값
+                    	또는 크기   
+user-scalabe 확대/축소	yes 또는 no		yes
+             가능 여부 
+initial-scale 초기 확대/	값1~10			1 
+              축소 	
+minimum-scale 최소 확대/축소 값0~10			0.25
+maximum-scale 최대 확대/축소 값0~10			1.6                                               
 */
 	body{
-		font-size:30px;
+		font-size:30pt;
 	}
 	/*767px 이하*/
-	@media screen and (max-width:797px){
+	@media screen and (max-width:767px){
 		h1{color:red;}
-		u1{
+		ul{
 			list-style:none;
 		}
-		u1 li{
+		ul li{
 			font-size:40%;
 		}
 	}
-	/*768 ~ 991px*/
+	/*768px ~ 991px*/
 	@media screen and (min-width:768px) and (max-width:991px){
 		h1{color:blue}
-		u1{
+		ul{
 			list-style:none;
 		}
-		u1 li{
+		ul li{
 			display:inline;
 			background-color:skyblue;
 			font-size:60%;
@@ -48,10 +48,10 @@ maximum-scale  최대 확대/축소  값0~10          1.6
 	/*992px 이상*/
 	@media screen and (min-width:992px){
 		h1{color:green}
-		u1{
-		list-style:none;
+		ul{
+			list-style:none;
 		}
-		u1 li{
+		ul li{
 			background-color:green;
 			color:white;
 			display:inline;
@@ -70,3 +70,5 @@ maximum-scale  최대 확대/축소  값0~10          1.6
 </ul>
 </body>
 </html>
+
+
