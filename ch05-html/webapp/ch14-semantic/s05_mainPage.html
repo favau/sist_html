@@ -4,148 +4,373 @@
     <meta charset="UTF-8">
     <title>mainPage</title>
     <style type="text/css">
-        header{
-            width:100%;
-            height:30px;
-            padding-bottom:100px;
-        }
-        a{
-            color:#E6E6E6;
-            text-align: center;
-            padding-top:10px;
-            font-size:1.3em;
-            margin:30px;
-            display: inline;
-            text-decoration: none;
-        }
-        p{
-            text-align: center;
-            margin:20px;
-            font-size:1.1em;
-            display: inline;
-        }
+
         #page_wrap{
-            color:#E6E6E6;
+            color:white;
             font-family: 'maplestory', 'Malgun Gothic', Gothic, sans-serif;
         }
-        .main_menu{
-            height:30px;
-            line-height:30px;
-            text-align:center;
-            padding:50px;
-            padding-right: 10px;
-            display:inline;
+        #main_icon{
+            text-align : center;
+            width:100%;
         }
-        #title_section{
+        .main_menu > li{
+            list-style:none;
+            font-size:1.1em;
+            text-decoration : none;
+        }
+        .main_menu >a {
+            text-decoration : none;
+            color:white;
+        }
+        .main_menu > a:hover{
+            display:inline;
+            background-color : #5AF7DC;
+            color:black;
+            padding : 3px 15px 3px 15px;
+            margin : -3px -15px -3px -15px;
+            border-radius:5px;
+        }
+        .main_menu > ol {
+            list-style:none;
+        }
+        .main_menu{
+            display:inline;
+            padding : 28px;
+        }
+        #main_form{
+            text-align: center;
+        }
+        .content_1{
+            display: flex;
+            justify-content: center;
+            background-color:#010B89;
+        }
+
+        .content_1 > ol{
+            color:white;
+            display:inline;
+            list-style:none;
+            padding-right : 20px;
+
+        }
+        .content_1 > li{
+            margin:5px;
+            text-align : left;
+            justify-content: start
+        }
+        .content_1 > a{
+            color:white;
+            text-decoration:none;
+        }
+        .content_1 > h5{
+            color:silver;
+            text-decoration:none;
+            margin-top : 5px;
+        }
+        .updown {
+            border: 1px solid silver;
+            width: 0;
+            height: 120px;
+            margin-top : 8px;
+        }
+        .updown_hr {
+            border: 1px solid #5AF7DC;
+            width: 100%;
+            height: 0px;
+
+        }
+        .bonus_menu{
+            position:relative;
+            left:300px;
+            top:48px;
+            text-align : center;
+            line-height: 2.8em;
+        }
+        .bonus_menu > a{
+            text-decoration: none;
+            color:#5AF7DC;
+            border : 2px solid #5AF7DC;
+            border-radius:10px;
+            padding : 13px 15px 13px 15px;
+        }
+        .bonus_menu > a:hover{
+            color:#010B89;
+            background-color : #5AF7DC;
+            border-radius:10px;
+        }
+
+        #content_sub{
+
+        }
+        #content_div1{
+            position:relative;
+            bottom : 5px;
+            width:70%;
+            height:500px;
+            display:inline-block;
+        }
+        .content_divsubmain{
+            float:left;
+            width:60%;
+            height:100%;
+        }
+        .content_divsub {
+            background-color:#010B89;
+            border-radius:15px;
+            display:inline-block;
+            width:34%;
+            height:100%;
+            float:right;
+            text-align: left;
+        }
+        .content_divsub2{
+            height:80%;
+            width: 90%;
+            position:relative;
+            left:15px;
+        }
+        .content_size {
+            height:22%;
+            position:relative;
+            left:5px;
+            bottom : 10px;
+        }
+        .content_size > p{
+            display:inline;
+            width:83%;
+            height:30%;
+            position:relative;
+            bottom : 30px;
+            left:10px;
+        }
+        .content_divsubmain > a >img{
+            border-radius:10px;
+            transition: all 0.2s linear;
+        }
+        .content_divsubmain > a > img:hover{
+            transform: scale(1.04);
+            border-radius:10px;
+
+        }
+        .content_size > img{
+            text-align: left;
+            position:relative;
+            width:30%;
+            height:85%;
+            border-radius:10px;
+            transition: all 0.2s linear;
+        }
+        .content_size > img:hover{
+            text-align: left;
+            position:relative;
+            width:30%;
+            height:85%;
+            transform: scale(1.2);
+            border-radius:10px;
+        }
+        .content_divsub > #head{
+            width:27%;
+            text-align: right;
+            position:relative;
+            left:10px;
+        }
+        p > a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #page_foot{
+            color:white;
+            font-family: 'maplestory', 'Malgun Gothic', Gothic, sans-serif;
+        }
+        .content_low{
+            border: 4px solid red;
+            width:70%;
+            height:600px;
+            text-align: left;
+        }
+        #content_low1 {
+            border: 4px solid green;
+            display: inline-block;
+            color: white;
+            font-size: 25px;
+            float:left;
+            position: relative;
+            left:10px;
+            top:50px;
+        }
+        #content_low2{
+            border : 2px solid purple;
+            width:100%;
+            height:50%;
+            margin-top:50px;
+            display:inline-block;
+            text-align: center;
+        }
+        .content_low2{
+            border : 2px solid yellow;
+            display: inline-block;
+            width: 22%;
+            height: 100%;
+            margin-left:20px;
+            position: relative;
+            right:10px;
+        }
+        .content_low3{
+            border : 2px solid blue;
+            height:63%;
+        }
+        .content_low4 > a{
+            color : white;
+            text-decoration: none;
+            text-align: left;
+            display: inline-block;
+            padding-top: 25px;
+            padding-left:10px;
+            padding-right:10px;
+            font-size: 22px;
         }
     </style>
 </head>
-<body style="background-image:url('../files/content2.PNG'); background-size:cover;">
-<div id="page_wrap">
-    <!--머리말-->
-    <header id="main_header">
-        <hgroup>
-            <h1 class="master-title">
+
+<body>
+    <div style="width:1920px;" align="center">
+        <div id="page_wrap" style="background-image: url('../files/content2.PNG'); background-size:cover; margin:-8px;">
+            <header id="main_icon">
                 <a href="#">
-                    <!--CHAMPIONS LEAGE img경로-->
-                    <center>
-                        <img src="../files/cl.png" width="40" height="40">
-                    </center>
+                        <img src="../files/cl.png" width="70" height="70">
                 </a>
-            </h1>
-        </hgroup>
-    </header>
+            </header>
 
-    <!--네비게이션(메뉴)-->
-    <nav id="main_nav">
-        <div class="main_menu">
-            <ul class="main_menu">
-                <!--메인 메뉴-->
-                <li class="outer-menu-item">
-                    <a href="#">Latest</a>
-                    <a href="#">Matches</a>
-                    <a href="#">Groups</a>
-                    <a href="#">Draws</a>
-                    <a href="#">Teams</a>
-                    <a href="#">Stats</a>
-                    <a href="#">Gaming</a>
-                    <a href="#">Final</a>
-                    <a href="#">History</a>
-                    <a href="#">About</a>
-                    <a href="#">Store</a>
-                </li>
-            </ul>
-        </div>
-        <!--메뉴 끝-->
-        <!--본문-->
-        <div id="content">
-            <section id="title_section">
-                <hr size=”1” width=”90%”>
-                <article>
-                    <p class="article-date">10 May 04:00</p>
-                    <p class="article-content">Real Madrid</p>
-                    <p class="article-content">Milan</p>
-                </article>
-                <article>
-                    <p class="article-date">11 May 04:00</p>
-                    <p class="article-content">Inter</p>
-                    <p class="article-content">Man City</p>
-                </article>
-                <article>
-                    <p class="article-date">17 May 04:00</p>
-                    <p class="article-content">Man City</p>
-                    <p class="article-content">Inter</p>
-                </article>
-                <article>
-                    <p class="article-date">18 May 04:00</p>
-                    <p class="article-content">Milan</p>
-                    <p class="article-content">Real Madrid</p>
-                </article>
-                <hr size=”1” width=”90%”>
-            </section>
-
-            <section id="content_section1">
-                <!--사진-->
-                <img src="../files/landscape.jpg" height="200" width="200">
-            </section>
-
-            <section id="content_section2">
-                <!--사진-->
-                <img src="../files/landscape.jpg" height="50" width="50">
-                <aside class="sub_content"> Semi-finals: What to look out for </aside>
-                <hr size=”1” width=”90%”>
-                <img src="../files/landscape.jpg" height="50" width="50">
-                <aside class="sub_content"> Champions League form guide </aside>
-                <hr size=”1” width=”90%”>
-                <img src="../files/landscape.jpg" height="50" width="50">
-                <aside class="sub_content"> Milan vs Inter 2003 highlights </aside>
-                <hr size=”1” width=”90%”>
-                <img src="../files/landscape.jpg" height="50" width="50">
-                <aside class="sub_content"> Meet the semi-finalists </aside>
-                <hr size=”1” width=”90%”>
-                <img src="../files/landscape.jpg" height="50" width="50">
-                <aside class="sub_content"> Watch all the highlights </aside>
-            </section>
-
-            <section>
-                <br><br><br>
-                <h1>Highlights</h1>
-                <video controls>
-                    <video src=”https://www.youtube.com/watch?v=n6WaTObHRJM” type="video/mp4"></video>
-                </video>
-                <video controls>
-                    <video src=”https://www.youtube.com/watch?v=n6WaTObHRJM” type="video/mp4"></video>
-                </video>
-                <video controls>
-                    <video src=”https://www.youtube.com/watch?v=n6WaTObHRJM” type="video/mp4"></video>
-                </video>
-                <video controls>
-                    <video src=”https://www.youtube.com/watch?v=n6WaTObHRJM” type="video/mp4"></video>
-                </video>
-            </section>
+            <!--네비게이션(메뉴)-->
+            <nav id="main_nav" >
+                <form id="main_form">
+                <span class="main_menu">
+                    <ol class="main_menu">
+                        <li class="main_menu"><a href="#">Latest</a></li>
+                        <li class="main_menu"><a href="#">Matches</a></li>
+                        <li class="main_menu"><a href="#">Groups</a></li>
+                        <li class="main_menu"><a href="#">Draws</a></li>
+                        <li class="main_menu"><a href="#">Teams</a></li>
+                        <li class="main_menu"><a href="#">Stats</a></li>
+                        <li class="main_menu"><a href="#">Gaming</a></li>
+                        <li class="main_menu"><a href="#">Final</a></li>
+                        <li class="main_menu"><a href="#">History</a></li>
+                        <li class="main_menu"><a href="#">About</a></li>
+                        <li class="main_menu"><a href="#">Store</a></li>
+                    </ol>
+                </span>
+                </form>
+                <!--메뉴 끝-->
+                <!--본문-->
+                <br>
+                <div class="updown_hr"></div>
+                <form id="content_form">
+                    <span class="content_1">
+                        <ol class="content_1">
+                            <li class="content_1"><h5>10 May 04:00</h5></li>
+                            <li class="content_1"><a href="#"> <img src="../files/RealMadrid.png" height="17" width="17"> Real Madrid</a></li>
+                            <li class="content_1"><a href="#"><img src="../files/Milan.png" height="17" width="17"> Milan</a></li>
+                        </ol>
+                            <div class="updown"></div>
+                        <ol class="content_1">
+                            <li class="content_1"><h5>11 May 04:00</h5></li>
+                            <li class="content_1"><a href="#"><img src="../files/Inter.png" height="17" width="17"> Inter</a></li>
+                            <li class="content_1"><a href="#"><img src="../files/ManCity.png" height="17" width="17"> Man City</a></li>
+                        </ol>
+                            <div class="updown"></div>
+                        <ol class="content_1">
+                            <li class="content_1"><h5>17 May 04:00</h5></li>
+                            <li class="content_1"><a href="#"><img src="../files/ManCity.png" height="17" width="17"> Man City</a></li>
+                            <li class="content_1"><a href="#"><img src="../files/Inter.png" height="17" width="17"> Inter</a></li>
+                        </ol>
+                            <div class="updown"></div>
+                        <ol class="content_1">
+                            <li class="content_1"><h5>18 May 04:00</h5></li>
+                            <li class="content_1"><a href="#"><img src="../files/Milan.png" height="17" width="17"> Milan</a></li>
+                            <li class="content_1"><a href="#"><img src="../files/RealMadrid.png" height="17" width="17"> Real Madrid</a></li>
+                        </ol>
+                        <div class="bonus_menu"><a href="#">View all matches</a></div>
+                    </span>
+                    <div class="updown_hr"></div>
+                </form>
+                <form id="content_sub">
+                <br>
+                    <div id="content_div1">
+                        <div class="content_divsubmain">
+                            <a href="#"><img src="../files/trop.avif" style="width:100%; height:100%;" ></a>
+                        </div>
+                        <div class="content_divsub">
+                            <h1 id="head">Headlines</h1>
+                            <div class="content_divsub2">
+                                <div class="content_size">
+                                    <img src="../files/sub1.avif" height="65" width="65">
+                                    <p><a href="#"> Semi-finals: What to look out for</a> </p>
+                            </div>
+                                <div class="content_size">
+                                    <img src="../files/sub2.avif" height="65" width="65">
+                                    <p><a href="#"> Champions League form guide</a> </p>
+                            </div>
+                                <div class="content_size">
+                                    <img src="../files/sub3.avif" height="65" width="65">
+                                    <p><a href="#"> Milan vs Inter 2003 highlights</a> </p>
+                            </div>
+                                <div class="content_size">
+                                    <img src="../files/sub4.avif" height="65" width="65">
+                                    <p><a href="#"> Meet the semi-finalists</a> </p>
+                            </div>
+                                <div class="content_size">
+                                    <img src="../files/sub5.avif" height="65" width="65">
+                                    <p><a href="#"> Watch all the highlights </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+             </nav>
         </div>
 
-    </nav>
-</div>
+        <div id="page_foot" style="background-image: url('../files/content3.PNG'); background-size:cover; margin-inline:-8px; padding-top:1px;">
+            <footer class="content_low">
+                <div id="content_low1">
+                    <p>Highlights</p>
+                </div>
+                <div id="content_low2">
+                    <div class="content_low2">
+                        <div class="content_low3">
+                            <a href="#"><img src="../files/Milan.png" height="17" width="17"></a>
+                        </div>
+                        <div class="content_low4">
+                            <a href="#">Highlights : Bayer 1-1 Man City</a>
+                        </div>
+                    </div>
+                    <div class="content_low2">
+                        <div class="content_low3">
+                            <a href="#"><img src="../files/Milan.png" height="17" width="17"></a>
+                        </div>
+                        <div class="content_low4">
+                            <a href="#">Highlights : Inter 3:3 Benfica</a>
+                        </div>
+                    </div>
+                    <div class="content_low2">
+                        <div class="content_low3">
+                            <a href="#"><img src="../files/Milan.png" height="17" width="17"></a>
+                        </div>
+                        <div class="content_low4">
+                            <a href="#">Highlights : Chelsea 0:2 Real Madrid</a>
+                        </div>
+                    </div>
+                    <div class="content_low2">
+                        <div class="content_low3">
+                            <a href="#"><img src="../files/Milan.png" height="17" width="17"></a>
+                        </div>
+                        <div class="content_low4">
+                            <a href="#">Highlights : Napoli 1-1 Milan</a>
+                        </div>
+                    </div>
+               </div>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
